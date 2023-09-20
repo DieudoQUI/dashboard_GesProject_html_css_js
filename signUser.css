@@ -1,0 +1,195 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    position:relative;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+body{
+    background-color:  rgba(250, 128, 114, 0.648);
+    
+}
+.wrapper{
+    display: flex;
+    flex-direction:column;
+}
+/* -----------formulaire---------------- */
+
+.wrapper_child{
+    backdrop-filter: blur(5px);
+    background-color: (to right, #eee);
+    width: 50%;
+    margin: 25px auto;
+    background-color: rgba(0,0,0,0.2);
+    border-radius: 15px;
+    color: white;
+}
+.titleform h2{
+    text-align: center;
+    font-size: 30px;
+    margin: 10px auto;
+    font-weight: 500;
+}
+#error{
+    text-align: center;
+}
+form{
+    width: 50%;
+    margin: 0 auto;
+    border-radius: 15px;
+}
+.groupField{
+    margin: 5px auto;
+    background-color: rgba(214, 11, 11, 0)
+}
+label{
+    display: block;
+    margin: 10px auto;
+    width: 80%;
+    color: #555;
+    font-size: 15px;
+}
+input{
+    display: block;
+    width: 80%;
+    padding: 9px 10px;
+    margin: 9px auto;
+    outline: none;
+    border: none;
+    background: none;
+    background-color: rgba(0,0,0,0.5);
+    border: 5px solid  rgba(0,0,0,0.2);
+    border-top-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+    color:#eee;
+    font-size: 15px;
+}
+::placeholder{
+    font-size: 15px;
+    font-weight: 500px;
+    color:#eee;
+}
+button[type="submit"]{
+   
+    display: block;
+    margin: 20px auto;
+    background-color: white;
+    color: black;
+    font-size: 15px;
+    border: 3px solid #555;
+    border-radius: 15px;
+    padding: 5px 8px;
+    cursor: pointer;
+}
+/* .menu-hambergeur{
+    margin: 0 auto;
+    width: 30px;
+    height: 30px;
+   background-color: green;
+}
+.menu-hambergeur span{
+    width: 25px;
+    height: 3px;
+    position: absolute;
+    top: 50%;
+    left: 50%; 
+    background-color: white;
+    transform: translate(-50%,-50%); 
+    transition: .5s;
+}
+
+.menu-hambergeur span::before{
+    content: "";
+    position: absolute;
+    top:0px;
+  /*   left:0; *//*
+    width: 25px;
+    height: 3px;
+    background-color: white;
+    transition: .5s;
+}
+.menu-hambergeur span::after{
+    content: "";
+    position: absolute;
+    /* top:0px; */
+   /* left:0;
+    width: 25px;
+    height: 3px;
+    background-color: white;
+    transition: .5s;
+}
+.menu-hambergeur span::before{
+    transform: translateY(7px);
+}
+
+.menu-hambergeur span::after{
+    transform: translateY(-7px);
+}
+.menu-hambergeur.active span{
+    background-color: transparent;
+}
+.menu-hambergeur.active span::before{
+    top:0;
+    transform: translateY(-50%) rotate(45deg);
+}
+.menu-hambergeur.active span::after{
+    top:0;
+    transform: translateY(-50%) rotate(-45deg);
+} */
+
+/* responsivité */
+@media (max-width:990px){
+    .wrapper_child{
+        
+        width: 80%;
+       
+       
+    }
+}
+@media (max-width:500px){
+    .wrapper_child{
+        width: 80%; 
+    }
+    form{
+        width: 65%;
+    }
+    input{
+        width: 50%;
+    }
+}   
+@media (max-width:366px){
+    .wrapper_child{  
+        width: 80%;
+    }
+    form{
+        width: 80%;
+    }
+}
+@media (max-width:300px){
+    .wrapper_child{  
+        width: 90%;
+    }
+    form{
+        width: 85%;
+    }
+    input{
+        width: 90%;
+    }
+}
+@media (max-width:288px){
+    .wrapper{
+        width: 100%;
+    }
+    .wrapper_child{  
+        width: 100%;
+    }
+    form{
+        width: 100%;
+    }
+    input{
+        width: 100%;
+    }
+}
+
+
+

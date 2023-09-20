@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Dashboard Project</title>
+  <link rel="stylesheet" href="index.css" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@mdi/font@5.9.55/css/materialdesignicons.min.css" />
+</head>
+
+<body>
+  <div class="wrapper">
+    <div class="aside__second">
+      <div class="aside__second__top">
+        <a href="index.html"><img src="images/logo.png" alt="logo" /></a>
+      </div>
+      <div class="aside__second__middle">
+        <ul class="">
+          <li class="aside__second__middle__item">
+            <a href="index.html">
+              <span class="mdi mdi-home-analytics"></span>
+            </a>
+          </li>
+          <li class="aside__bar__middle__menu__item">
+            <a href="projet.html">
+              <span class="mdi mdi-clipboard-clock"></span>
+            </a>
+          </li>
+          <li class="aside__second__middle__item">
+            <a href="membre.html">
+              <span class="mdi mdi-account-group"></span>
+            </a>
+          </li>
+          <li class="aside__second__middle__item">
+            <a href="taches.html">
+              <span class="mdi mdi-clipboard-clock"></span>
+            </a>
+          </li>
+          <li class="aside__second__middle__item">
+            <a href="forum.html">
+              <span class="mdi mdi-message-text-outline"></span>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <div class="dashboard">
+      <aside class="aside__bar">
+        <div class="aside__bar__top">
+          <div class="aside__bar__top__img">
+            <a href="index.html"><img src="images/logo.png" alt="Logo" /></a>
+          </div>
+        </div>
+        <div class="aside__bar__middle">
+          <ul class="aside__bar__middle__menu">
+            <li class="aside__bar__middle__menu__item">
+              <a href="index.html">
+                <span class="mdi mdi-home-analytics"></span>
+                <p>Dashboard</p>
+              </a>
+            </li>
+            <li class="aside__bar__middle__menu__item">
+              <a href="projet.html">
+                <span class="mdi mdi-clipboard-clock"></span>
+                <p>Projet</p>
+              </a>
+            </li>
+            <li class="aside__bar__middle__menu__item">
+              <a href="membre.html">
+                <span class="mdi mdi-account-group"></span>
+                <p>Membres</p>
+              </a>
+            </li>
+            <li class="aside__bar__middle__menu__item">
+              <a href="taches.html">
+                <span class="mdi mdi-clipboard-clock"></span>
+                <p>Tâches</p>
+              </a>
+            </li>
+            <li class="aside__bar__middle__menu__item">
+              <a href="forum.html">
+                <span class="mdi mdi-message-text-outline"></span>
+                <p>Forum</p>
+              </a>
+            </li>
+          </ul>
+        </div>
+        <div class="aside__bar__bottom">
+          <div class="aside__bar__bottom__date">
+            <p class="aside__date"></p>
+            <p class="aside__hour"></p>
+          </div>
+        </div>
+      </aside>
+      <div class="dashboard__main">
+        <header class="header">
+          <div class="container">
+            <div class="header__content">
+              <div class="header__content__left">
+                <div class="header__content__left__menu">
+                  <span></span>
+                </div>
+              </div>
+              <div class="header__content__right">
+                <div class="notification">
+                  <span class="mdi mdi-bell"></span>
+                </div>
+                <div class="header__content__right__show__dropdown">
+                  <div class="imgDropdown">
+                    <img src="images/team-4.jpg" alt="ImageUser" />
+                  </div>
+                  <div class="UserDropdown">
+                    <p>Tintinuser</p>
+                  </div>
+                  <div class="deconnexion__dropdown">
+                    <div class="deconnexion__modal">
+                      <span class="mdi mdi-logout"></span>
+                      <p>Déconnexion</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </header>
+        <main>
+          <div class="container">
+            <div class="main__content">
+              <h1 class="main__content__title">
+                Personnel en charge du projet
+              </h1>
+              <hr />
+              <!-- Members -->
+              <section class="dashboard__main__member">
+                <div class="dashboard__main__member__title">
+                  <h2 class="dashboard__main__member__title__tag">
+                    Personnel
+                  </h2>
+                  <a href="#" class="show-all">Ajouter un utilisateur</a>
+                </div>
+                <table id="dashboard__main__member__table">
+                  <thead>
+                    <tr>
+                      <th>ID</th>
+                      <th>Nom</th>
+                      <th>Prenom</th>
+                      <th>Date d'Ajout</th>
+                      <th>Statut</th>
+                      <th>Actions</th>
+                    </tr>
+                  </thead>
+                  <tbody class="dashboard__main__member__table__tbody">
+                    
+                  </tbody>
+                </table>
+              </section>
+              <form action="" id="addMemberFormModal" class="">
+                <h1 class="addMemberFormModal__title">Ajout d'utilisateur</h1>
+                <div class="addMemberFormModal__error">
+                  <p class="addProjectFormModal__error__tag"></p>
+                </div>
+                <div class="field__group">
+                  <label for="identify">ID</label>
+                  <input type="text" name="identify" id="identify" class="memberInfo" />
+                </div>
+                <div class="field__group">
+                  <label for="lastName">Nom</label>
+                  <input type="text" name="" id="lastName" class="memberInfo" />
+                </div>
+                <div class="field__group">
+                  <label for="firstName">Prénom</label>
+                  <input type="text" name="" id="firstName" class="memberInfo" />
+                </div>
+                <div class="field__group">
+                  <label for="dateAdd">Date d'Ajout</label>
+                  <input type="date" name="year" id="dateAdd" class="memberInfo" />
+                </div>
+                <div class="field__group">
+                  <label for="statutline">Statut</label>
+                  <input type="number" name="number" id="statutline" class="memberInfo" />
+                </div>
+                <!--  <input type="hidden" id="hidden" /> -->
+                <div class="form__footer">
+                  <button class="form__footer__btn" id="form--saveMember">
+                    Enregistrer
+                  </button>
+                  <button class="form__footer__btn" id="form--cancel">Annuler</button>
+                </div>
+                <div class="buttonCloseModal">
+                  <span class="mdi mdi-close"></span>
+                </div>
+              </form>
+            </div>
+          </div>
+        </main>
+      </div>
+    </div>
+  </div>
+  <script src="index.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/3.7.1/chart.min.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register User</title>
+    <link rel="stylesheet" href="signUser.css">
+</head>
+<body>
+    <div class="wrapper"> 
+        <div class="wrapper_child">
+            <div class="titleform">
+                <h2>Inscrivez-vous</h2>
+            </div>
+            <form id="registerForm">
+                <p id="error"></p>
+                <div class="nom">
+                    <label for="username">Nom d'utilisateur</label>
+                    <input type="text" name="username" id="username" placeholder="Nom d'utilisateur">
+                </div>
+                <div class="email">
+                <label for="email">Email</label>
+                <input type="email" name="Email" id="email" placeholder="Email">
+                </div>
+                <div class="password">
+                    <label for="password">Mot de passe</label>
+                    <input type="password" name="Password" id="password" placeholder="Mot de Passe">
+                </div>
+                <div class="password">
+                    <label for="cPassword">Confirmer Mot de passe</label>
+                    <input type="Password" name="cPassword" id="cPassword" placeholder="Confirmer Mot de passe">
+                </div>
+                <div class="submit">
+                    <button type="submit" id="submit">Soumettre</button>
+                </div>
+               
+            </form>
+           <!--  <div class="menu-hambergeur">
+                <span></span>
+
+            </div> -->
+        </div>
+    </div>
+    <script src="signUser.js"></script>
+</body>
+</html>

@@ -1,0 +1,95 @@
+{
+    "projets": [
+      {
+        "id": 1,
+        "nom": "Projet A",
+        "budget": 100000,
+        "nombre_de_projets": 5,
+        "avancement": 70,
+        "taches": [
+          {
+            "id": 1,
+            "nom": "Tâche 1",
+            "duree": 10,
+            "personnel": "John Doe",
+            "avancement": 100
+          },
+          {
+            "id": 2,
+            "nom": "Tâche 2",
+            "duree": 15,
+            "personnel": "Jane Smith",
+            "avancement": 50
+          },
+          {
+            "id": 3,
+            "nom": "Tâche 3",
+            "duree": 8,
+            "personnel": "Robert Johnson",
+            "avancement": 80
+          }
+        ]
+      },
+      {
+        "id": 2,
+        "nom": "Projet B",
+        "budget": 75000,
+        "nombre_de_projets": 3,
+        "avancement": 40,
+        "taches": [
+          {
+            "id": 1,
+            "nom": "Tâche 1",
+            "duree": 12,
+            "personnel": "Alice Brown",
+            "avancement": 20
+          },
+          {
+            "id": 2,
+            "nom": "Tâche 2",
+            "duree": 20,
+            "personnel": "Michael Lee",
+            "avancement": 70
+          }
+        ]
+      },
+      {
+        "id": 3,
+        "nom": "Projet C",
+        "budget": 50000,
+        "nombre_de_projets": 7,
+        "avancement": 90,
+        "taches": [
+          {
+            "id": 1,
+            "nom": "Tâche 1",
+            "duree": 5,
+            "personnel": "David Wang",
+            "avancement": 100
+          },
+          {
+            "id": 2,
+            "nom": "Tâche 2",
+            "duree": 18,
+            "personnel": "Sophia Kim",
+            "avancement": 80
+          },
+          {
+            "id": 3,
+            "nom": "Tâche 3",
+            "duree": 10,
+            "personnel": "Emma Garcia",
+            "avancement": 70
+          },
+          {
+            "id": 4,
+            "nom": "Tâche 4",
+            "duree": 7,
+            "personnel": "Liam Martinez",
+            "avancement": 60
+          }
+        ]
+      }
+    ]
+  }
+  

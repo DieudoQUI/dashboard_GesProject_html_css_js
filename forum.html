@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dashboard Project</title>
+    <link rel="stylesheet" href="index.css" />
+    <link rel="stylesheet" href="forum.css">
+    <link rel="stylesheet"href="https://cdn.jsdelivr.net/npm/@mdi/font@5.9.55/css/materialdesignicons.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/3.7.1/chart.min.js"></script>
+  </head>
+  <body>
+    <div class="wrapper">
+      <div class="aside__second">
+        <div class="aside__second__top">
+          <a href="index.html"><img src="images/logo.png" alt="logo"/></a>
+        </div>
+        <div class="aside__second__middle">
+          <ul class="">
+            <li class="aside__second__middle__item">
+              <a href="index.html">
+                <span class="mdi mdi-home-analytics"></span>
+              </a>
+            </li>
+            <li class="aside__bar__middle__menu__item">
+              <a href="projet.html">
+                <span class="mdi mdi-clipboard-clock"></span>
+              </a>
+            </li>
+            <li class="aside__second__middle__item">
+              <a href="membre.html">
+                <span class="mdi mdi-account-group"></span>
+              </a>
+            </li>
+            <li class="aside__second__middle__item">
+                <a href="taches.html">
+                  <span class="mdi mdi-clipboard-clock"></span>
+                </a>
+              </li>
+              <li class="aside__second__middle__item">
+                <a href="forum.html">
+                  <span class="mdi mdi-message-text-outline"></span>
+                </a>
+              </li>
+          </ul>
+        </div>
+      </div>
+      <div class="dashboard">
+        <aside class="aside__bar">
+          <div class="aside__bar__top">
+            <div class="aside__bar__top__img">
+              <a href="index.html"><img src="images/logo.png" alt="Logo" /></a>
+            </div>
+          </div>
+          <div class="aside__bar__middle">
+            <ul class="aside__bar__middle__menu">
+              <li class="aside__bar__middle__menu__item">
+                <a href="index.html">
+                  <span class="mdi mdi-home-analytics"></span>
+                  <p>Dashboard</p>
+                </a>
+              </li>
+              <li class="aside__bar__middle__menu__item">
+                <a href="projet.html">
+                  <span class="mdi mdi-clipboard-clock"></span>
+                  <p>Projet</p>
+                </a>
+              </li>
+              <li class="aside__bar__middle__menu__item">
+                <a href="membre.html">
+                  <span class="mdi mdi-account-group"></span>
+                  <p>Membres</p>
+                </a>
+              </li>
+              <li class="aside__bar__middle__menu__item">
+                <a href="taches.html">
+                  <span class="mdi mdi-clipboard-clock"></span>
+                  <p>Tâches</p>
+                </a>
+              </li>
+              <li class="aside__bar__middle__menu__item">
+                <a href="forum.html">
+                  <span class="mdi mdi-message-text-outline"></span>
+                  <p>Forum</p>
+                </a>
+              </li>
+            </ul>
+          </div>
+          <div class="aside__bar__bottom">
+            <div class="aside__bar__bottom__date">
+              <p class="aside__date"></p>
+              <p class="aside__hour"></p>
+            </div>
+          </div>
+        </aside>
+        <div class="dashboard__main">
+          <header class="header">
+            <div class="container">
+              <div class="header__content">
+                <div class="header__content__left">
+                  <div class="header__content__left__menu">
+                    <span></span>
+                  </div>
+                </div>
+                <div class="header__content__right">
+                  <div class="notification">
+                    <span class="mdi mdi-bell"></span>
+                  </div>
+                  <div class="header__content__right__show__dropdown">
+                    <div class="imgDropdown">
+                      <img src="images/team-4.jpg" alt="ImageUser" />
+                    </div>
+                    <div class="UserDropdown">
+                      <p>Tintinuser</p>
+                    </div>
+                    <div class="deconnexion__dropdown">
+                      <div class="deconnexion__modal">
+                          <span class="mdi mdi-logout"></span>
+                          <p>Déconnexion</p>
+                      </div>
+                  </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </header>
+          <main>
+            <div class="container">
+              <div class="main__content__title">Forum</h1>
+                <hr />
+                <div class="forumBackdrop"></div>
+                <form class="modal">
+                  <h1 id="modalTitle">Bienvenue</h1>
+                  <p id="content">Entrez Votre User Name</p>
+                  <input placeholder="Entrez votre User Name" type="text" />
+                  <button>Soumettre</button>
+                </form>
+                <div class="forumContainer">
+                  <div class="chatbox">
+                    <ul id="messagelist"></ul>
+                    <form class="Input">
+                      <input type="text" placeholder="Ecrivez votre message ..." />
+                      <button>Envoyez</button>
+                    </form>
+                  </div>
+                  <div class="activeusers">
+                    <h2>Utilisateurs Active</h2>
+                    <ul id="users"></ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </main>
+        </div>
+      </div>
+    </div>
+    <script src="index.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/3.7.1/chart.min.js"></script>
+  </body>
+</html>
